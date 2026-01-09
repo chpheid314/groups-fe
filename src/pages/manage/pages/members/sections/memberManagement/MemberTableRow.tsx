@@ -63,7 +63,10 @@ const MemberTableRow = ({
       {/* 이름 */}
       <th className={cn(cellStyle, "text-greyDark")}>
         <div className="flex items-center gap-2">
-          {member.name} {isThisMemberPresident && <Crown />}
+          {member.name}
+          <div className="text-yellow-500">
+            {isThisMemberPresident && <Crown />}
+          </div>
         </div>
       </th>
       {/* 이메일 */}
